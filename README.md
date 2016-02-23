@@ -12,7 +12,8 @@ Downloads VirusShare hashes ([for more information click here!][2]) and searches
 
     alternatively `-u missing/number range (e.g. 10-200)/specific numbers (e.g. 10,11,12)`
 
-3. python VirusShare-Search.py --search 2d75cc1bf8e57872781f9cd04a529256 e7ae40d25a6da15cdd3712f4f55153ac # etc.
+3. `python VirusShare-Search.py --search 2d75cc1bf8e57872781f9cd04a529256 e7ae40d25a6da15cdd3712f4f55153ac`
+
     alternatively `-s hash1 hash2 hash3 etc.`
  
 ## Configuration
