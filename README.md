@@ -18,7 +18,7 @@ Downloads VirusShare hashes ([for more information click here!][2]) and searches
  
 ## Configuration
 - `-d` or `--directory`: sets the working directory (e.g. where the search takes place, and where the hash files are downloaded to)
-- `-l` or `--latest`: sets the latest hash repository. This is primarily used when updating the local repository of hash files
+- `-l` or `--latest`: sets the latest hash repository. As of writing, the latest is 220. This is used when updating the local repository of hash files
 
 ## Compatibility
 - Python 3.4
