@@ -1,10 +1,10 @@
 # VirusShare-Search
 Downloads VirusShare hashes ([for more information click here!][2]) and searches them for specified MD5 hash values.
 
-## Background
-[VirusShare][1] is an awesome virus sharing site. Unfortunately, as far as I was able to find, there isn't an easy way to find what file contains a specific hash. 
+## Description
+[VirusShare][1] is an awesome virus sharing site. The site contains collections of malware samples, contained in large zip archives for download. The problem is that there is no easy way to determine which collection has a specific sample you're looking for. **Note:** once logged into the site, there is a search bar, but it doesn't state what zip file a sample belongs to.
 
-**Note:** if there is a way to perform this functionality, let me know!
+So, to fix this problem, this script will download each of the collections corresponding text files (that state what hashes are contained within), and will search them for specified MD5 hashes.
 
 ## How-to
 1. `git clone https://github.com/AdamGreenhill/VirusShare-Search.git`
