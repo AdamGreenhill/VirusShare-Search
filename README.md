@@ -25,6 +25,16 @@ So, to fix this problem, this script will download each of the collections corre
 ## Compatibility
 - Python 3.4
 - Platform independent
+ 
+## Changelog
+### 1.1 - 2016-03-22
+#### Added
+- latest VirusShare hash repo: 224
+
+### 1.0 - 2016-02-21
+#### Added
+- initial commit
+- latest VirusShare hash repo: 220
 
 [1]: https://virusshare.com/
 [2]: https://virusshare.com/hashes.4n6
