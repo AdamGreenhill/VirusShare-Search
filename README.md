@@ -27,6 +27,10 @@ So, to fix this problem, this script will download each of the collections corre
 - Platform independent
  
 ## Changelog
+### 1.2 - 2016-04-12
+#### Added
+- latest VirusShare hash repo: 227
+
 ### 1.1 - 2016-03-22
 #### Added
 - latest VirusShare hash repo: 224
