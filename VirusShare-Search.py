@@ -8,15 +8,22 @@ import os
 import time
 from urllib.request import urlopen
 
+already_done_iterations = []
+
 def downloader(directory, iteration):
 	# Downloads given URL
 	url = 'https://virusshare.com/hashes/VirusShare_%05d.md5' % iteration
-	print("  Downloading {0} into {1}...".format(url, directory))
-	file_path = os.path.join(directory, os.path.basename(url))
-	contents = urlopen(url)
-	file_output = open(file_path,'wb')
-	file_output.write(contents.read())
-	file_output.close()
+	exists = os.path.isfile(directory + ("\VirusShare_%05d.md5" % iteration))
+	
+	if not exists:
+		print("  Downloading {0} into {1}...".format(url, directory))
+
+		file_path = os.path.join(directory, os.path.basename(url))
+		contents = urlopen(url)
+		file_output = open(file_path,'wb')
+		file_output.write(contents.read())
+		file_output.close()
+		
 	time.sleep(1)
 
 def find_missing(directory, latest):
