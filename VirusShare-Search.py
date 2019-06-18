@@ -8,8 +8,6 @@ import os
 import time
 from urllib.request import urlopen
 
-already_done_iterations = []
-
 def downloader(directory, iteration):
 	# Downloads given URL
 	url = 'https://virusshare.com/hashes/VirusShare_%05d.md5' % iteration
@@ -23,8 +21,10 @@ def downloader(directory, iteration):
 		file_output = open(file_path,'wb')
 		file_output.write(contents.read())
 		file_output.close()
-		
+	else: 	print("Skipping " + directory + ("\VirusShare_%05d.md5" % iteration))
+
 	time.sleep(1)
+
 
 def find_missing(directory, latest):
 	# find all files, parse files for end number, remove any files from 'to_find'
@@ -96,7 +96,7 @@ def main():
 	parser = argparse.ArgumentParser(description='tool to download VirusShare hash files and search them for specified hashes')
 	parser.add_argument('-s','--search', help='hash to search for in local repository (hint: specify any number of hashes)', nargs="+")
 	parser.add_argument('-u','--update', help='updates local hash containing files (--update all/missing/10,11,12/0-20)')
-	parser.add_argument('-l','--latest', help='sets latest VirusShare file released (default: 227)', default='227')
+	parser.add_argument('-l','--latest', help='sets latest VirusShare file released (default: 366)', default='366')
 	parser.add_argument('-d','--directory', help='sets working directory (default: VirusShare_Hashes)', default='VirusShare_Hashes')
 
 	args = parser.parse_args()
