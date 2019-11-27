@@ -20,7 +20,7 @@ So, to fix this problem, this script will download each of the collections corre
  
 ## Configuration
 - `-d` or `--directory`: sets the working directory (e.g. where the search takes place, and where the hash files are downloaded to)
-- `-l` or `--latest`: sets the latest hash repository. As of writing, the latest is 224. This is used when updating the local repository of hash files. **If the default is not up-to-date open a ticket and I will make the changes.**
+- `-l` or `--latest`: sets the latest hash repository. As of writing, the latest is 371. This is used when updating the local repository of hash files. **If the default is not up-to-date open a ticket and I will make the changes.**
 
 ## Compatibility
 - Python 3.4
